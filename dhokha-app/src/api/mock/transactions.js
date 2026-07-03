@@ -1,0 +1,23 @@
+// 30 mock transactions for the live ticker
+export const transactions = [
+  { id: 'TXN-9F21-A', from: 'ACC-A01', to: 'ACC-C01', amount: 48200, bank: 'Bank A→C', ts: '09:12:04', status: 'SWARM', latency: 147 },
+  { id: 'TXN-7C08-B', from: 'ACC-B01', to: 'ACC-C01', amount: 63500, bank: 'Bank B→C', ts: '09:15:11', status: 'SWARM', latency: 152 },
+  { id: 'TXN-4B22-A', from: 'ACC-A02', to: 'ACC-C01', amount: 12400, bank: 'Bank A→C', ts: '09:14:33', status: 'FLAGGED', latency: 143 },
+  { id: 'TXN-2E44-B', from: 'ACC-B02', to: 'ACC-C01', amount: 34800, bank: 'Bank B→C', ts: '09:17:05', status: 'FLAGGED', latency: 161 },
+  { id: 'TXN-6A19-C', from: 'ACC-C02', to: 'ACC-C01', amount: 9200, bank: 'Bank C→C', ts: '09:18:22', status: 'FLAGGED', latency: 138 },
+  { id: 'TXN-3K01-A', from: 'ACC-A03', to: 'ACC-A04', amount: 5200, bank: 'Bank A', ts: '08:00:15', status: 'CLEAN', latency: 122 },
+  { id: 'TXN-7B12-B', from: 'ACC-B03', to: 'ACC-B04', amount: 3400, bank: 'Bank B', ts: '08:20:44', status: 'CLEAN', latency: 118 },
+  { id: 'TXN-1C98-C', from: 'ACC-C03', to: 'ACC-C04', amount: 2100, bank: 'Bank C', ts: '08:45:03', status: 'CLEAN', latency: 129 },
+  { id: 'TXN-4F02-A', from: 'ACC-A03', to: 'ACC-B03', amount: 18700, bank: 'Bank A→B', ts: '07:30:59', status: 'CLEAN', latency: 134 },
+  { id: 'TXN-8X11-A', from: 'ACC-A04', to: 'ACC-B04', amount: 1800, bank: 'Bank A→B', ts: '07:55:12', status: 'CLEAN', latency: 119 },
+  { id: 'TXN-9M23-B', from: 'ACC-B04', to: 'ACC-C03', amount: 9100, bank: 'Bank B→C', ts: '08:10:08', status: 'CLEAN', latency: 141 },
+  { id: 'TXN-2N44-C', from: 'ACC-C04', to: 'ACC-A04', amount: 3300, bank: 'Bank C→A', ts: '08:30:20', status: 'CLEAN', latency: 126 },
+  { id: 'TXN-5P78-A', from: 'ACC-A01', to: 'ACC-A03', amount: 7800, bank: 'Bank A', ts: '06:45:50', status: 'CLEAN', latency: 115 },
+  { id: 'TXN-3Q12-B', from: 'ACC-B01', to: 'ACC-B03', amount: 22100, bank: 'Bank B', ts: '06:20:30', status: 'CLEAN', latency: 133 },
+  { id: 'TXN-1R88-C', from: 'ACC-C01', to: 'ACC-C03', amount: 4500, bank: 'Bank C', ts: '06:10:04', status: 'CLEAN', latency: 128 },
+  { id: 'TXN-6S44-A', from: 'ACC-A02', to: 'ACC-B02', amount: 8800, bank: 'Bank A→B', ts: '06:05:55', status: 'CLEAN', latency: 131 },
+  { id: 'TXN-4T01-B', from: 'ACC-B02', to: 'ACC-A03', amount: 2900, bank: 'Bank B→A', ts: '05:50:40', status: 'CLEAN', latency: 122 },
+  { id: 'TXN-7U19-C', from: 'ACC-C02', to: 'ACC-B03', amount: 5600, bank: 'Bank C→B', ts: '05:30:15', status: 'CLEAN', latency: 136 },
+  { id: 'TXN-9V33-A', from: 'ACC-A04', to: 'ACC-C03', amount: 3100, bank: 'Bank A→C', ts: '05:00:00', status: 'CLEAN', latency: 120 },
+  { id: 'TXN-2W55-B', from: 'ACC-B03', to: 'ACC-C04', amount: 4700, bank: 'Bank B→C', ts: '04:45:30', status: 'CLEAN', latency: 125 },
+];

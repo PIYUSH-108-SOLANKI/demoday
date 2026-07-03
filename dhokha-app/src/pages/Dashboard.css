@@ -1,0 +1,79 @@
+/* Dashboard-specific styles */
+
+.page-content {
+  padding: 24px 32px;
+}
+
+.clock {
+  font-size: 13px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+
+/* Distribution bars */
+.distribution-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.dist-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dist-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: 60px;
+  text-transform: uppercase;
+}
+
+.dist-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dist-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease;
+}
+
+.dist-pct {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  width: 32px;
+  text-align: right;
+}
+
+/* Table row interactivity */
+tbody tr {
+  position: relative;
+}
+
+tbody tr::after {
+  content: '→';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: var(--text-dim);
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+tbody tr:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(2px);
+}
