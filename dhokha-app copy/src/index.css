@@ -6,14 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Special+Elite&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Core palette — matching landing page (detective brown/red theme) */
-  --bg: #120e0e;
-  --bg-surface: #1a1412;
-  --bg-card: #1e1715;
-  --bg-card-hover: #261c1a;
-  --bg-elevated: #2a201c;
-  --border: #3a2a24;
-  --border-hover: #4a3830;
+  /* Core palette — matching landing page (cyber-detective deep violet/red theme) */
+  --bg: #121014;
+  --bg-surface: #17141a;
+  --bg-card: #1c1822;
+  --bg-card-hover: #26202e;
+  --bg-elevated: #221d28;
+  --border: #2a2530;
+  --border-hover: rgba(229, 72, 77, 0.3);
+  --board: #17141a;
 
   /* Cork board tones */
   --cork-a: #2b2118;
@@ -38,6 +39,7 @@
   --brass-bg: rgba(201, 162, 39, 0.08);
   --safe: #3fb67f;            /* Safe green */
   --safe-bg: rgba(63, 182, 127, 0.08);
+  --accent-purple: #818cf8;
 
   /* Risk colors */
   --risk-low: #3fb67f;
@@ -63,6 +65,31 @@
 
   /* Sidebar */
   --sidebar-width: 260px;
+}
+
+/* Light Theme overrides */
+:root[data-theme="light"] {
+  --bg: #f9f8f6;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1efe9;
+  --bg-elevated: #fcfbfa;
+  --border: #e2ded5;
+  --border-hover: rgba(229, 72, 77, 0.4);
+  --board: #ffffff;
+
+  --text: #1a1614;
+  --text-secondary: #5c554e;
+  --text-dim: #968f86;
+
+  --string-glow: rgba(229, 72, 77, 0.15);
+  --string-bg: rgba(229, 72, 77, 0.05);
+  --brass: #9c730a;
+  --brass-bg: rgba(156, 115, 10, 0.05);
+  --accent-purple: #5c64ec;
+  
+  --cork-a: #eae5db;
+  --cork-b: #dfd9ce;
 }
 
 /* ---- RESET ---- */
@@ -1217,8 +1244,32 @@ p.lead { color: var(--text-dim); font-size: 16px; line-height: 1.7; margin-botto
   font-size: 8px; letter-spacing: 1px; color: var(--text-dim);
   border: 1px solid #2a2530; padding: 1px 5px; border-radius: 3px;
 }
+.db-sidebar-theme-toggle {
+  padding: 10px 20px;
+  display: flex;
+  margin-top: 10px;
+}
+.theme-toggle-btn {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Special Elite', monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+}
+.theme-toggle-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text);
+  border-color: var(--border-hover);
+}
 .db-sidebar-footer {
-  padding: 16px 20px; border-top: 1px solid #2a2530; margin-top: auto;
+  padding: 16px 20px; border-top: 1px solid var(--border); margin-top: auto;
 }
 .db-sidebar-status {
   display: flex; align-items: center; gap: 8px;
