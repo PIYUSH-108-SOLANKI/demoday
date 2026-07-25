@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
+import StoryPage from './pages/StoryPage';
 import DashboardLayout from './pages/dashboard/DashboardLayout';
 import CustomCursor from './components/landing/CustomCursor';
 import './App.css';
@@ -14,6 +15,7 @@ function App() {
             <Landing />
           </>
         } />
+        <Route path="/story" element={<StoryPage />} />
         <Route path="/dashboard/*" element={<DashboardLayout />} />
       </Routes>
     </BrowserRouter>
